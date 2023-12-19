@@ -1,7 +1,7 @@
 limit = input("To what number do you want to generate primes?: ")
 limit = int(limit)
 
-def sieve(limit):
+def primes(limit):
 	numbers = [i for i in range(2, limit+1)]
 	index = 0
 
@@ -14,4 +14,4 @@ def sieve(limit):
 
 	print(len(numbers))
 	return numbers
-print(sieve(limit))
+print(primes(limit))
